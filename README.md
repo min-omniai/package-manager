@@ -8,17 +8,17 @@
 
 #### 1. 안전성 우선 - [setup-safe.sh](https://github.com/min-omniai/package-manager/blob/main/dev-setup/setup-safe.sh) (기업환경, 처음 사용자)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/min-omniat/package-manager/main/dev-setup/setup-safe.sh | bash
+curl -fsSL https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-safe.sh | bash
 ```
 
 #### 2. 효율성 우선 - [setup-efficient.sh](https://github.com/min-omniai/package-manager/blob/main/dev-setup/setup-efficient.sh) (개인 개발자, 빠른 성능 원하는 경우)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/min-omniat/package-manager/main/dev-setup/setup-efficient.sh | bash
+curl -fsSL https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-efficient.sh | bash
 ```
 
 #### 3. 균형 조합 - [setup-balanced](https://github.com/min-omniai/package-manager/blob/main/dev-setup/setup-balanced.sh) (대부분의 개발자에게 추천)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/min-omniat/package-manager/main/dev-setup/setup-balanced.sh | bash
+curl -fsSL https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-balanced.sh | bash
 ```
 
 ### 2단계: 설치 완료 후 확인
