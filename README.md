@@ -4,21 +4,61 @@
 
 ## 📍 빠른 시작
 
+### 🤔 어떤 걸 선택해야 할까요?
+
+| 상황 | 추천 스크립트 | 이유 |
+|---|---|---|
+| 회사 컴퓨터, 처음 사용 | 안전성 우선 | 100% 호환성, 안정적 |
+| 개인 컴퓨터, 빠른 성능 원함 | 효율성 우선 | 10-100배 빠른 속도 |
+| 잘 모르겠음 | 균형 조합 | 성능과 안정성 둘 다 |
+
+<br>
+
 ### 1단계: 본인에게 맞는 설치 방식 선택!
 
-#### 1. 안전성 우선 - [setup-safe.sh](https://github.com/min-omniai/package-manager/blob/main/dev-setup/setup-safe.sh) (기업환경, 처음 사용자)
+#### 안전성 우선 - [setup-safe.sh](https://github.com/min-omniai/package-manager/blob/main/dev-setup/setup-safe.sh) (기업환경, 처음 사용자)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-safe.sh | bash
+# 1. 스크립트 다운로드
+curl -O https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-safe.sh
+
+# 2. 내용 확인 (선택사항 | 지워도 됩니다)
+cat setup-balanced.sh
+
+# 3. 실행 권한 부여
+chmod +x setup-safe.sh
+
+# 4. 실행
+./setup-safe.sh
 ```
 
-#### 2. 효율성 우선 - [setup-efficient.sh](https://github.com/min-omniai/package-manager/blob/main/dev-setup/setup-efficient.sh) (개인 개발자, 빠른 성능 원하는 경우)
+#### 효율성 우선 - [setup-efficient.sh](https://github.com/min-omniai/package-manager/blob/main/dev-setup/setup-efficient.sh) (개인 개발자, 빠른 성능 원하는 경우)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-efficient.sh | bash
+# 1. 스크립트 다운로드
+curl -O https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-efficient.sh
+
+# 2. 내용 확인 (선택사항 | 지워도 됩니다)
+cat setup-balanced.sh
+
+# 3. 실행 권한 부여
+chmod +x setup-efficient.sh
+
+# 4. 실행
+./setup-efficient.sh
 ```
 
-#### 3. 균형 조합 - [setup-balanced](https://github.com/min-omniai/package-manager/blob/main/dev-setup/setup-balanced.sh) (대부분의 개발자에게 추천)
+#### 균형 조합 - [setup-balanced](https://github.com/min-omniai/package-manager/blob/main/dev-setup/setup-balanced.sh) (대부분의 개발자에게 추천)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-balanced.sh | bash
+# 1. 스크립트 다운로드
+curl -O https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-balanced.sh
+
+# 2. 내용 확인 (선택사항 | 지워도 됩니다)
+cat setup-balanced.sh
+
+# 3. 실행 권한 부여
+chmod +x setup-balanced.sh
+
+# 4. 실행
+./setup-balanced.sh
 ```
 
 ### 2단계: 설치 완료 후 확인
@@ -27,36 +67,6 @@ curl -fsSL https://raw.githubusercontent.com/min-omniai/package-manager/main/dev
 brew --version
 python3 --version
 node --version
-```
-
----
-
-## 📍 어떤 걸 선택해야 할까요?
-
-| 상황 | 추천 스크립트 | 이유 |
-|---|---|---|
-| 회사 컴퓨터, 처음 사용 | 안전성 우선 | 100% 호환성, 안정적 |
-| 개인 컴퓨터, 빠른 성능 원함 | 효율성 우선 | 10-100배 빠른 속도 |
-| 잘 모르겠음 | 균형 조합 | 성능과 안정성 둘 다 |
-
----
-
-## 📍 안전한 설치 방법 (추천)
-
-위의 한 줄 명령어가 불안하다면:
-
-```bash
-# 1. 스크립트 다운로드
-curl -O https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-balanced.sh
-
-# 2. 내용 확인 (선택사항)
-cat setup-balanced.sh
-
-# 3. 실행 권한 부여
-chmod +x setup-balanced.sh
-
-# 4. 실행
-./setup-balanced.sh
 ```
 
 ---
