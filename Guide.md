@@ -1,4 +1,4 @@
-# 📌 맥북 개발자용 패키지 매니저 완전 가이드
+# 💻 맥북 개발자용 패키지 매니저 완전 가이드
 
 ## 📚 목차
 1. [패키지 매니저 정의](#1-패키지-매니저-정의)
@@ -131,4 +131,130 @@ dev-setup/
 └── setup-balanced.sh    # 균형 조합 설치
 ```
 
-### 🛡️ 안전성 우선 설치: `setup-safe.sh`
+---
+
+## 4. 자동 설치 스크립트
+
+### 📁 파일 구성
+```
+dev-setup/
+├── setup-safe.sh        # 안전성 우선 설치
+├── setup-efficient.sh   # 효율성 우선 설치  
+└── setup-balanced.sh    # 균형 조합 설치
+```
+
+### 🚀 스크립트 사용법
+
+#### 1단계: 파일 다운로드 및 권한 설정
+```bash
+# 디렉토리 생성
+mkdir ~/dev-setup && cd ~/dev-setup
+
+# 스크립트 파일들을 nano로 생성
+nano setup-safe.sh        # 안전성 우선 스크립트 내용 붙여넣기
+nano setup-efficient.sh   # 효율성 우선 스크립트 내용 붙여넣기  
+nano setup-balanced.sh    # 균형 조합 스크립트 내용 붙여넣기
+
+# 실행 권한 부여
+chmod +x setup-safe.sh
+chmod +x setup-efficient.sh
+chmod +x setup-balanced.sh
+```
+
+#### 2단계: 본인에게 맞는 스크립트 선택 및 실행
+```bash
+# 안전성 우선 (기업환경, 초보자)
+./setup-safe.sh
+
+# 효율성 우선 (개인개발자, 숙련자)  
+./setup-efficient.sh
+
+# 균형 조합 (대부분의 개발자 - 추천)
+./setup-balanced.sh
+```
+
+### 📝 chmod와 ./의 의미
+
+#### `chmod +x filename.sh`
+- **의미**: 파일에 실행 권한을 부여
+- **필요한 이유**: 보안상 다운로드된 파일은 기본적으로 실행 불가
+- **x**: execute(실행) 권한
+
+#### `./filename.sh`
+- **의미**: 현재 디렉토리(.)에서 filename.sh 실행
+- **./**: 현재 폴더를 의미
+- **경로 예시**:
+  - `./setup.sh` → 현재 폴더의 setup.sh
+  - `~/Desktop/setup.sh` → 홈/데스크톱의 setup.sh
+  - `/usr/local/bin/setup.sh` → 절대 경로
+
+---
+
+## 📋 빠진 부분 체크리스트
+
+### ✅ 포함된 내용
+- [x] 패키지 매니저 정의 및 필요성
+- [x] OS별, 언어별 패키지 매니저 종류
+- [x] 안전성 vs 효율성 비교
+- [x] 3가지 설치 조합 (안전/효율/균형)
+- [x] 실행 가능한 .sh 스크립트 3개
+- [x] chmod +x와 ./ 사용법 설명
+
+### 🔍 추가 고려사항 (필요시 보완)
+- [ ] **터미널 앱별 고려사항**: Warp, iTerm2, 기본 터미널
+- [ ] **M1/M2 vs Intel Mac 차이점**: Rosetta, 경로 차이
+- [ ] **회사 보안 정책**: 기업 환경에서의 제약사항
+- [ ] **기존 환경 마이그레이션**: 다른 OS에서 macOS로 이전시
+- [ ] **백업 및 복구**: 문제 발생시 롤백 방법
+- [ ] **성능 최적화**: SSD, 메모리 사용량 고려사항
+
+---
+
+## 🎯 추천 사용 흐름
+
+### 1. 사전 준비
+```bash
+# 시스템 업데이트 확인
+sudo softwareupdate -l
+
+# Xcode Command Line Tools 설치
+xcode-select --install
+```
+
+### 2. 조합 선택
+- **첫 macOS 개발자** → `setup-safe.sh`
+- **기존 개발자** → `setup-balanced.sh` 
+- **성능 우선** → `setup-efficient.sh`
+
+### 3. 설치 후 확인
+```bash
+# 설치 확인
+brew --version
+python3 --version  # 또는 uv --version
+node --version
+git --version
+
+# 첫 프로젝트 생성 테스트
+new-python test-project  # 함수가 있다면
+```
+
+### 4. 개발 시작
+```bash
+# 개발 환경 테스트
+echo "Hello, macOS Development!" > test.py
+python3 test.py
+```
+
+---
+
+## 💡 마무리
+
+이 가이드를 통해 **맥북에서 개발환경을 10분 만에 완벽 구축**할 수 있습니다. 
+
+**핵심 포인트**:
+1. 패키지 매니저로 **수동 설치의 번거로움 해결**
+2. 본인 상황에 맞는 **조합 선택** (안전성 vs 효율성)
+3. **자동화 스크립트**로 실수 없는 설치
+4. **chmod +x** → **./script.sh**로 간단 실행
+
+**Happy Coding! 🚀**
