@@ -61,7 +61,48 @@ chmod +x setup-balanced.sh
 ./setup-balanced.sh
 ```
 
-### 2단계: 설치 완료 후 확인
+### 2단계: 터미널에 1단계 명령어 실행 시 나오는 문구
+<img width="432" height="42" alt="image" src="https://github.com/user-attachments/assets/1fdc0f6f-32df-46a0-ac7a-5882bf12df01" />
+
+<br>
+
+<img width="335" height="63" alt="image" src="https://github.com/user-attachments/assets/b6885664-2d15-4e3b-9330-c4e8e71282c9" />
+
+<br>
+
+<img width="369" height="61" alt="image" src="https://github.com/user-attachments/assets/68b1fe0a-2d33-4f63-a166-1e247c7f37e8" />
+
+<br>
+
+<img width="307" height="61" alt="image" src="https://github.com/user-attachments/assets/565e5e31-0f46-449e-9e61-bd4f57e627f8" />
+
+<br>
+
+<img width="352" height="17" alt="image" src="https://github.com/user-attachments/assets/539939e5-7e97-4133-b0c4-8026a5ec8784" />
+
+<br>
+
+<img width="400" height="23" alt="image" src="https://github.com/user-attachments/assets/4c285e24-0a84-404f-8c63-ef8b4adc244d" />
+
+<br>
+
+<img width="392" height="22" alt="image" src="https://github.com/user-attachments/assets/61e83755-4671-48fe-97ab-94248dac5cb7" />
+
+<br>
+
+<img width="340" height="61" alt="image" src="https://github.com/user-attachments/assets/9450a9cc-6d3e-44fd-ad47-aee6a7fa5a53" />
+
+<br>
+
+<img width="488" height="19" alt="image" src="https://github.com/user-attachments/assets/b6b6748d-e051-479e-b894-ee528acf98c2" />
+
+<br>
+
+<img width="516" height="61" alt="image" src="https://github.com/user-attachments/assets/be45ab99-d43c-414a-9730-d41a4651edfc" />
+
+**(y/N)** 중 자신에게 맞는 환경을 세팅하면 됩니다.
+
+### 3단계: 설치 완료 후 확인
 ```bash
 # 터미널 재시작 후 확인
 brew --version
