@@ -47,7 +47,7 @@ node --version
 
 ```bash
 # 1. 스크립트 다운로드
-curl -O https://github.com/min-omniai/package-manager/main/sh-file/setup-balanced.sh
+curl -O https://raw.githubusercontent.com/min-omniai/package-manager/main/dev-setup/setup-balanced.sh
 
 # 2. 내용 확인 (선택사항)
 cat setup-balanced.sh
