@@ -6,17 +6,17 @@
 
 ### 1단계: 본인에게 맞는 설치 방식 선택
 
-#### 안전성 우선 (기업환경, 처음 사용자)
+#### 1. 안전성 우선 (기업환경, 처음 사용자)
 ```bash
 curl -fsSL https://github.com/min-omniai/package-manager/main/sh-file/setup-safe.sh | bash
 ```
 
-#### 효율성 우선 (개인 개발자, 빠른 성능 원하는 경우)
+#### 2. 효율성 우선 (개인 개발자, 빠른 성능 원하는 경우)
 ```bash
 curl -fsSL https://github.com/min-omniai/package-manager/main/sh-file/setup-efficient.sh | bash
 ```
 
-#### 균형 조합 (대부분의 개발자에게 추천)
+#### 3. 균형 조합 (대부분의 개발자에게 추천)
 ```bash
 curl -fsSL https://github.com/min-omniai/package-manager/main/sh-file/setup-balanced.sh | bash
 ```
